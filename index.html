@@ -1,0 +1,83 @@
+
+
+
+
+    <!-- There should be a navbar on every page where the number
+     of students batch wise should be displayed in real time. -->
+
+ <!-- Make a dashboard where you can see the list of all students
+ added to the database.
+There should be an option to remove a particular student if needed.
+When removed the student should be removed from the dom as well as 
+the database.
+Keep the removed student in the local storage with key as trash. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form for masai students </title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+   
+    <h1> Student Management</h1>
+
+    <div>
+    
+      <form>
+        <label for="">Student Image</label><br />
+        <input id="image" type="text" placeholder="Enter Image URL" /><br />
+        <label for="">Student Name</label><br />
+        <input id="name" type="text" placeholder="Enter Student Name" /><br />
+        <label for="">Batch </label><br/>
+        <select id="batch">
+          <option value="FT WEB-17">FT WEB-17</option>
+          <option value="FT WEB-16">FT WEB-16</option>
+          <option value="FT WEB-15">FT WEB-15</option>
+          <option value="FT WEB-14">FT WEB-14</option></select
+        ><br />
+
+        <label for="">Course </label><br />
+        <select id="course">
+            <option value="101">101</option>
+            <option value="201">201</option>
+            <option value="211">211</option>
+            <option value="301">301</option></select
+          ><br />
+
+          <label for="">Unit </label><br />
+          <select id="unit">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option></select
+            ><br />
+      
+        <input type="submit" />
+      </form>
+      <table>
+     
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Batch</th>
+            <th>Course</th>
+            <th>Unit</th>
+            <th>Remove</th>
+          
+          </tr>
+        </thead>
+        <tbody id="tbody">
+       
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="/script.js"></script>
